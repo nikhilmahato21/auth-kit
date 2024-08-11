@@ -1,3 +1,4 @@
+import { Poppins } from "next/font/google"
 import type { Config } from "tailwindcss"
 
 const config = {
@@ -18,6 +19,9 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        Poppins: ['Poppins', 'sans-serif'], // Replace 'Roboto' with your Google Font
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
