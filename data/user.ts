@@ -34,7 +34,8 @@ export const getUserById = async (id:string)=>{
             where:{
                 id,
             }
-         })   
+         }) 
+         return user 
     } catch (error) {
         return null
     }
